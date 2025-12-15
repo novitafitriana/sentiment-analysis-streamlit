@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+from collections import Counter
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 
@@ -157,3 +158,4 @@ if menu == "📝 Testing":
         else:
             hasil = pipe(user_text)[0]["label"]
             st.success(f"Hasil Prediksi: **{hasil}**")
+
